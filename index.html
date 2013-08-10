@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Org Chart</title>
+        <link rel="stylesheet" href="demo.css"/>
+        <link rel="stylesheet" href="jquery.orgchart.css"/>
+        <style>
+        span.title {
+            font-weight: normal;
+            font-style: italic;
+            color: #404040;
+        }
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="jquery.orgchart.js"></script>
+        <script>
+        $(function() {
+            $("#organisation").orgChart({container: $("#main")});
+        });
+        </script>
+    </head>
+
+    <body>
+
+        <div id="left">
+
+            <ul id="organisation" style="display: none;">
+                <li class="company"><em>Board of Directors</em>
+                    <ul>
+                        <li>Bob Sofman & Abhi Nemani<br/><span class='title'>Co-Executive Directors (Interim)</span>
+                        <ul>
+                            <li>Meghan Reilly <br/><span class='title'>COO & CFO</span>
+                                <ul>
+                                    <li>Michael Santus<br/><span class='title'>Office Manager</span></li>
+                                    <li>Clementine Breslin<br/><span class='title'>Admin Assistant</span></li>
+                                    <li>TBD<br/><span class='title'>Finance Manager</span></li>
+                                </ul>
+                            </li>
+                            <li>Meghan Reilly <br/><span class='title'>Interim Revenue Director</span>
+                                <ul>
+                                    <li>Hadley Dynak<br/><span class='title'>Institutional Partnerships<br /> Manager</span></li>
+                                    <li>Ashley Meyers<br/><span class='title'>Donor & Engagement Manager</span></li>
+                                    <li>Matt Bottiano<br/><span class='title'>Revenue Assistant</span></li>
+                                </ul>
+                            </li>
+                            <li>Bob Sofman <br/><span class='title'>CPO</span>
+                                <ul>
+                                    <li>Kevin Curry<br/><span class='title'>Brigade Director</span>
+                                      <ul>
+                                          <li>Hannah Young<br/><span class='title'>Brigade Coordinator</span></li>
+                                          <li>Ashley Meyers<br/><span class='title'>NYC Brigade Captain</span></li>
+                                      </ul></li>
+                                    <li>Alex Tran<br/><span class='title'>Fellowship Manager</span></li>
+                                    <li>Dharmishta Rhood<br/><span class='title'>Accelerator Manager</span></li>
+                                    <li>Catherine Bracy<br/><span class='title'>International Manager</span></li>
+                                    <li>Luke Norris<br/><span class='title'>Government Relations Director</span></li>
+                                    <li>Jack Madans<br/><span class='title'>Government Partnerships Manager </span></li>
+                                    <li>Lauren Dyson<br/><span class='title'>Content Manager</span></li>                                    
+                                </ul>
+                            </li>
+                            <li>Mike Migurski <br/><span class='title'>CTO</span><br/>
+                                <ul>
+                                    <li>Cyd Harrell<br/><span class='title'>UX Evangelist</span></li>
+                                    <li>Mick Thompson<br/><span class='title'>Engineer-in-Residence</span></li>
+                                    <li>Angel Kittiyachavalit<br/><span class='title'>Designer-in-Residence</span></li>                                    
+                                </ul>
+                            </li>
+                            <li>Abhi Nemani <br/><span class='title'>Interim Marketing Director</span><br/>
+                                <ul>
+                                    <li>Lauren Reid<br/><span class='title'>Communications Manager</span></li>
+                                    <li>Dana Oshiro<br/><span class='title'>Senior Marketing Manager</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        
+        </div>
+
+        <div id="content">        
+            <div id="main">
+            </div>
+        </div>
+            
+  </body>
+
+</html>
